@@ -1,0 +1,31 @@
+<header class="p-3 mb-3 bg-primary text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a class="navbar-brand" href="#" >Cloud Facilities</a>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"></ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"></form>
+
+      <div class="dropdown text-end" *ngIf="usuarioEstaAutenticado()">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./../assets/user.png" alt="mdo" width="32" height="32" class="rounded-circle" />
+        </a>
+        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+          <li>
+            <a class="dropdown-item" routerLink="/profile" routerLinkActive="active"
+              >Perfil</a>
+          </li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<router-outlet></router-outlet>
