@@ -9,7 +9,7 @@ phases:
       - ng version
   build:
     commands:
-      - ng build --configuration=production --build-optimizer
+      - ng build
   post_build:
     commands:
       - aws s3 sync dist/ s3://www.cloudfacilities.click --delete
