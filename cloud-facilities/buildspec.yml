@@ -4,7 +4,9 @@ phases:
     runtime-versions:
       nodejs: latest
     commands:
-      - npm install -g @angular/cli@9.1.15
+      - npm install -g @angular/cli@latest
+      - npm -v
+      - ng version
   build:
     commands:
       - ng build --configuration=production --build-optimizer
