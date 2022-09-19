@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 16.15.0
+      nodejs: 16
     commands:
       - npm install -g @angular/cli@9.1.15
   build:
