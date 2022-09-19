@@ -5,9 +5,11 @@ O projeto contará com métodos ágeis para controle de entregas, adequando-se �
 
 # Fases do projeto:
 
-<ol>
-<li>Nome</li>
-<li>Telefone</li>
-<li>Endereço</li>
-<li>País</li>
-</ol> 
+<dl>
+<dt>Início do projeto:</dt>
+<dd> Criação do front-end Angular com estilização bootstrap v5</dd>
+<dd> Criação do serviço de controle de acesso com Cognito</dd>
+<dd> Integração de página de login (front-end angular) com serviço AWS Cognito</dd>
+</dl>
+
+* Demais fases serão apresentadas após um refinamento completo do escopo do projeto
