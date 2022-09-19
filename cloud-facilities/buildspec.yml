@@ -1,0 +1,13 @@
+version: 0.6
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16.15.0
+    commands:
+      - npm install -g @angular/cli@9.1.15
+  build:
+    commands:
+      - ng build --configuration=production --build-optimizer
+  post_build:
+    commands:
+      - aws s3 sync dist/ s3://www.cloudfacilities.click --delete
